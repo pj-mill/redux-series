@@ -1,1 +1,1 @@
-# redus-series
+# redux-series
