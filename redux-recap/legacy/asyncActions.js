@@ -11,7 +11,7 @@ const applyMiddleware = redux.applyMiddleware;
 
 const initialState = {
     loading: false,
-    user: [],
+    users: [],
     error: "",
 };
 
@@ -50,7 +50,7 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 loading: false,
-                user: action.payload,
+                users: action.payload,
             };
         case FETCH_USERS_FAILED:
             return {
